@@ -39,7 +39,7 @@ body, h1, h2, h3, p {
 #banner.jumbotron {
     padding-top: .5rem;
     padding-bottom: .5rem;
-    background-image: url('images/0411.jpg'); /* Change this to the path of your image */
+    background-image: url('0411.jpg'); /* Change this to the path of your image */
     background-size: cover; /* Ensures the image covers the full jumbotron */
     background-position: center center; /* Centers the image */
     background-repeat: no-repeat;
