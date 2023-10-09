@@ -1,0 +1,223 @@
+/* ======================================== BASE STYLES === */
+
+/* === TYPOGRAPHY === */
+
+body, h1, h2, h3, p {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    /* ...other styles */
+}
+
+/* === GLOBAL STYLES === */
+
+/* ======================================== COMPONENT STYLES === */
+
+/* === BUTTONS === */
+
+.btn-primary {
+    
+}
+
+/* === CARDS === */
+
+.card {
+    
+}
+
+/* ======================================== SECTION STYLES === */
+
+/* === HEADER/NAVIGATION === */
+.navbar {
+    background-color: rgb(203, 224, 228);
+}
+
+/* === BANNER SECTION === */
+#banner {
+    background-color: white;
+}
+
+#banner.jumbotron {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-image: url('images/0411.jpg'); /* Change this to the path of your image */
+    background-size: cover; /* Ensures the image covers the full jumbotron */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat;
+    color: black;
+    margin-bottom: 0;
+}
+
+.banner-text {
+    margin-left: 3em;
+    margin-right: 1em;
+}
+
+.img-fluid {
+    padding-right: 1em;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.9);  /* White semi-transparent background */
+    border-radius: 60px; 
+    margin: 3em;
+}
+
+/* === PRICING SECTION === */
+
+/* === ABOUT US SECTION === */
+#about-us {
+    background-color: rgb(241, 227, 230);
+}
+
+.about-us-img {
+    border-radius: 30px; 
+}
+
+.about-us-text {
+    padding: 4em 2em;
+    margin-left: 2em;
+}
+
+/* === GALLERY === */
+
+#gallery {
+    background-color: rgb(203, 224, 228);
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.gallery-container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Five columns side by side */
+.column {
+    float: left;
+    width: 20%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* === CONTACT SECTION === */
+
+#contact {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: rgb(241, 227, 230);
+}
+
+/* ======================================== UTILITY/HELPER CLASSES === */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.ul-blue {
+    text-decoration: underline;
+}
+
+.ul-pink {
+    text-decoration: underline;
+}
+
+.tb-padding {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+/* ======================================== MEDIA QUERIES === */
+
+/* === MOBILE STYLES: === */
+
+@media (max-width: 767px) {
+    .banner-text {
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+    .overlay {
+        background-color: rgba(255, 255, 255, 0.9);  /* White semi-transparent background */
+        border-radius: 60px; 
+        margin: .5em;
+    }
+
+    .about-us-img {
+        margin-top: 2em;
+    }
+
+    .about-us-text {
+        padding: 2em 2em;
+        margin-left: 0;
+    }
+}
+
+/* === TABLET STYLES === */
+@media (min-width: 768px) {
+    /* Styles for tablet devices */
+}
+
+/* === DESKTOP STYLES === */
+@media (min-width: 992px) {
+    /* Styles for desktop */
+}
+
+/* === LARGE DESKTOP STYLES === */
+@media (min-width: 1200px) {
+    /* Styles for large screens */
+}
