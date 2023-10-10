@@ -30,3 +30,27 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+/* === Form Submission === */
+
+<script>
+  $(document).ready(function() {
+    $('form[name="contact"]').submit(function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      $.ajax({
+        url: '/', // The same URL as your form
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        success: function() {
+          // Trigger modal on success
+          $('#thankYouModal').modal('show');
+        },
+        error: function() {
+          alert('Error submitting form!'); // Handle errors here
+        }
+      });
+    });
+  });
+</script>
